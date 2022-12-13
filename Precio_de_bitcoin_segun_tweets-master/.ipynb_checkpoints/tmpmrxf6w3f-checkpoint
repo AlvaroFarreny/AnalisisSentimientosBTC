@@ -1,0 +1,38 @@
+from sklearn import preprocessing
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as pl
+import tweepy
+from sklearn import linear_model
+import statsmodels.api as sm
+from textblob import TextBlob
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+import multiprocessing as mp
+import threading as th
+import os
+
+df_comb = df = pd.read_csv("df_combinada.csv")
+df_comb = df_comb.drop(['Unnamed: 0'], axis=1)
+
+tweets = df_comb.iloc[:,3]
+clasificaciones = [""] * len(tweets)
+
+del df_comb
+    
+for i in range(len(tweets)):
+    score = SentimentIntensityAnalyzer().polarity_scores(clasificaciones[i])
+    
+    if score['neg'] > score['pos']:
+        clasificaciones[i] = "negativo"
+    elif score['pos'] > score['neg']:
+        clasificaciones[i] = "positivo"
+    elif score['pos'] == score['neg']:
+            clasificaciones[i] = "neutral"
+            
+    if(i%1000==0):
+         print(i, "/", len(tweets), "-", i/len(tweets)*100, "%")
+    
+df_sentimientos = pd.DataFrame()
+df_sentimientos["clasificaciones"] = clasificaciones
+
+df_sentimientos.to_csv("df_sentimientos.csv")
