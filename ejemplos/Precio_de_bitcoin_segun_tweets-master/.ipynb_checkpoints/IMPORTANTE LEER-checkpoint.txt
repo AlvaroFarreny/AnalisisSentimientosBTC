@@ -1,0 +1,2 @@
+No puedo subir el archivo "Bitcoin_tweets.csv" porque pesa más de 100mb
+Descargar de "https://www.kaggle.com/kaushiksuresh147/bitcoin-tweets" y añadirlo en el repositorio local como "Bitcoin_tweets.csv"

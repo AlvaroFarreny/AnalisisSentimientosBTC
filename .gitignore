@@ -1,4 +1,15 @@
 
 data/tweetsKaggle.csv
 data/tweets.csv
-*.csv
+Precio_de_bitcoin_segun_tweets-master/df_ligera4.csv
+Precio_de_bitcoin_segun_tweets-master/df_ligera3.csv
+Precio_de_bitcoin_segun_tweets-master/df_ligera2.csv
+Precio_de_bitcoin_segun_tweets-master/df_ligera1.csv
+Precio_de_bitcoin_segun_tweets-master/BTC-USD.csv
+ejemplos/Precio_de_bitcoin_segun_tweets-master/df_ligera1.csv
+ejemplos/Precio_de_bitcoin_segun_tweets-master/df_ligera2.csv
+ejemplos/Precio_de_bitcoin_segun_tweets-master/df_ligera3.csv
+ejemplos/Precio_de_bitcoin_segun_tweets-master/df_ligera4.csv
+ejemplos/base_datos_2008.csv
+ejemplos/Precio_de_bitcoin_segun_tweets-master/BTC-USD.csv
+data/Fecha_Sentimiento_twt_16M.csv
