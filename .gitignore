@@ -14,3 +14,9 @@ ejemplos/base_datos_2008.csv
 ejemplos/Precio_de_bitcoin_segun_tweets-master/BTC-USD.csv
 data/Fecha_Sentimiento_twt_16M.csv
 ejemplos/data/base_datos_2008.csv
+data/creditcard.csv
+data/diabetes.csv
+data/OnlineRetail.csv
+data/heart.csv
+data/titanic.csv
+data/winequality-red.csv
